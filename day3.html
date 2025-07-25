@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selector</title>
+    <style>
+        *{
+            background-color: rgb(201, 158, 105);
+        }
+        .parent > h1{
+            color: blue;
+        }
+        h1 + h2{
+            color: brown;
+        }
+        h1~h3{
+            color: rgb(222, 119, 1);
+        }
+        .parent h4{
+            color: rgb(183, 228, 23);
+        }
+
+        .parent>.subcontainer > p{
+            color: rgb(49, 6, 206);
+        }
+        .subcontainer>p{
+            color: rgb(15, 246, 38);
+        }
+        .subcontainer>.subcontainer1>pre{
+            background-color: blue;
+            color: bisque;
+        }
+        .subconatiner2>p+h5{
+            color: aquamarine;
+        }
+        .subconatiner2 p{
+            color: rgb(107, 227, 2);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+            <h1>my</h1>
+            <h2>name</h2>
+            <h3>is</h3>
+            <h4>Abhi</h4>
+            <div class="subcontainer">
+                <p>dog</p>
+                <p>cat</p>
+                <div class="subcontainer1">
+                    <pre>hi haow are you</pre>
+                    <div class="subconatiner2">
+                        <p>kalki</p>
+                        <h5>salaar</h5>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
