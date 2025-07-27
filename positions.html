@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+   
+    .navbar{
+      padding: 20px 25px;
+      font-family: Arial, Helvetica, sans-serif;
+     
+      
+      
+    }
+    .logo{
+      display: inline-block;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+    .navlinks{
+      display: inline-block;
+      float: right;
+      padding-right: 20px;
+    }
+    .navlinks span{
+      padding: 0 15px;
+      letter-spacing: 4px;
+      cursor: pointer;
+    }
+    .dg1{
+      position: relative;
+    }
+    .dg1 img{
+      width: 100%;
+      height: auto;
+      padding: 20px 0px ; 
+     
+    }
+    .middle>.logo2{
+      background-color:  rgb(49, 47, 47);
+      color: white;
+      font-weight: 5px;
+      padding: 20px;
+      letter-spacing: 4px;
+      cursor: pointer;
+    }
+    .dg1>.middle{
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      translate: 50% 50%;
+    }
+    .middle>.word{
+      color: white;
+      letter-spacing: 4px;
+      padding: 0 5px;
+    }
+    .allhouse{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .house{
+      width: 250px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .house img{
+      width: 100%;
+      object-fit: cover;
+    }
+    .house>.name{
+      background-color: black;
+      color: white;
+      width: 90px;
+    }
+    .name>p{
+      width: 100%;
+    }
+    .house{
+      position: relative;
+    }
+    .house>.name{
+      position: absolute;
+      top: 0;
+      left: 0%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">BR <span style="font-weight: normal;">Architects</span></div>
+    <div class="navlinks">
+      <span>Projects</span>
+      <span>About</span>
+      <span>Contact</span>
+  </div>
+  </div>
+
+  <div class="dg1">
+    <img src="./css-images/architect.jpg" alt="architect">
+    <div class="middle">
+        <span class="logo2"><b>B R</b></span>
+        <span class="word">Architects</span>
+    </div>
+  </div>
+
+  <h2>Projects</h2>
+  <br>
+  <div class="allhouse">
+    <div class="house">
+      <img src="./css-images/house2.jpg" alt="house2">
+      <div class="name">
+        <p>Brick house</p>
+      </div>
+    </div>
+    <div class="house">
+      <img src="./css-images/house3.jpg" alt="h3">
+      <div class="name">
+        <p>Brick house</p>
+      </div>
+    </div>
+    <div class="house">
+      <img src="./css-images/house4.jpg" alt="h4">
+      <div class="name">
+        <p>Brick house</p>
+      </div>
+    </div>
+    <div class="house">
+      <img src="./css-images/house5.jpg" alt="h5">
+      <div class="name">
+        <p>Brick house</p>
+      </div>
+    </div>
+    
+  </div>
+ 
+
+  <div class="allhouse">
+    <div class="house">
+      <img src="./css-images/house2.jpg" alt="house2">
+      <div class="name">
+        <p>Brick house</p>
+      </div>
+    </div>
+    <div class="house">
+      <img src="./css-images/house3.jpg" alt="h3">
+      <div class="name">
+        <p>Brick house</p>
+      </div>
+    </div>
+    <div class="house">
+      <img src="./css-images/house4.jpg" alt="h4">
+      <div class="name">
+        <p>Brick house</p>
+      </div>
+    </div>
+    <div class="house">
+      <img src="./css-images/house5.jpg" alt="h5">
+      <div class="name">
+        <p>Brick house</p>
+      </div>
+    </div>
+    
+  </div>
+ 
+
+</body>
+</html>
