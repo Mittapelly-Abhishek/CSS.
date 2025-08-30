@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+  body {
+  margin: 0;
+  overflow-x: hidden; 
+  overflow-y: scroll;
+}
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      
+    }
+    
+    .container1 {
+      display: grid;
+      grid-template-rows: 150px;
+      grid-template-columns: 1fr 3fr;
+      height: 10vh;
+      gap: 15px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      width: 95.20%;
+      margin-right: 15px;
+      margin-left: 40.5px;
+     
+    }
+    
+    .left {
+      background-color: hsl(246, 31%, 69%);   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      grid-area: 1/1/2/2;
+    }
+
+    
+    .right {
+      background-color: hsl(0, 0%, 95%);
+      display: flex;
+      justify-content: flex-end;
+      grid-area: 1/2/2/4;
+      gap: 15px ;
+      padding-right: 20px;
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+
+    .inner1 {
+      
+      justify-content: space-evenly;
+      background: white;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      height: 100px;
+      margin-top: 40px;
+      cursor: pointer;
+    }
+
+    .inner1.active {
+      background-color: hsl(0, 35%, 62%);
+      color: white;
+      width: 120px;
+    }
+
+     .right .inner1:hover {
+      background-color: hsl(0, 35%, 62%);
+      color: white;
+    }
+
+    /* ------------------------------------ */
+    .container2 {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 148px;
+      padding: 15px;
+      gap: 200px;
+      
+
+    }
+
+    .img1 {
+      width: 100%;
+      max-width: 520px;
+      margin-left: 25px;
+    }
+
+    .hero-text {
+      max-width: 800px;
+      flex: 1;
+      background-color:  hsl(0, 0%, 95%);
+      margin-right: 20px;
+      margin-bottom: 5px;
+       word-spacing: 5px;
+       
+       
+       padding: 40px;  
+    } 
+
+    .hero-text h2 {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    } 
+
+    .btn {
+      display: inline-block;
+      background: #c07c7c;
+      color: #fff;
+      padding: 20px 40px;
+      text-decoration: none;
+    } 
+     /* -------------------------------------- */
+      .features {
+        height: 230px;
+      background-color: #9C94D0; 
+      color: white;
+      text-align: center;
+      padding: 60px 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-left: 40px;
+      margin-right: 35px;
+      margin-bottom: 18px;
+    }
+
+    .feature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feature-item i {
+      font-size: 60px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .feature-item:hover i {
+      transform: scale(1.2);
+      color: hsl(51, 100%, 50%); 
+    }
+
+    .feature-item p {
+      font-size: 18px;
+      margin: 0;
+      line-height: 1.5;
+      padding: 0px 50px;
+    }
+    
+   /* ----------------------------------- */
+
+
+    .container-3 {
+
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 2fr;
+      height: 100vh;
+      margin-top: 10px;
+      margin-left: 40px;
+      margin-right: 35px;
+      gap: 15px;
+    }
+
+    .about-text-1 {
+      grid-area: 1/1/2/2;
+      padding: 10px;
+      background-color:  hsl(0, 0%, 95%);
+      line-height: 1.3;
+      word-spacing: 1px;
+      color: #333;
+      
+
+    }
+    
+    .about-text-2 {
+      grid-area: 2/1/3/2;
+      background: #ddd;
+      color: #333;
+      padding: 20px;
+      word-spacing: 1px;
+      line-height: 1.3;
+      
+    }
+    .about-image {
+      grid-area: 1/2/3/3;
+
+    }
+
+    .container-3 pre {
+      margin: 10px;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* -------------------------------------------------- */
+   .container-4 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 15px; 
+      max-width: 1200px; 
+      margin: 30px auto;
+      margin-right: 35px;
+      margin-left: 40px;
+    }
+
+    .item1 {
+      grid-column: 1 / -1; 
+      background-color: #87CEFA;
+      text-align: center;
+      padding: 20px;
+      height: 150px;
+      
+    }
+
+    .item1 h2 {
+
+      margin: 0;
+      color: #333;
+      margin-top: 20px;
+      margin-left: 800px;
+    }
+  .item1 pre {
+    margin-top: 30px;
+  }
+  .item1 pre span {
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+    
+}
+
+  .item1 pre span:hover {
+    color: white;        
+}
+
+  .item12 {
+      grid-column: 1 / -1; 
+      background-color: #87CEFA;
+      height: 40px;
+  }
+
+    .container-4 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 5px;
+    }
+ 
+   /* ---------------------------------------s */
+
+  .container-5 {
+      display: grid;
+      grid-template-rows: 150px 450px 50px;
+      grid-template-columns: 380px 380px 380px;
+      height: 100vh;
+      margin-top: 15px;
+      margin-left: 40.5px;
+      margin-right: 35px;
+      gap: 15px;
+      
+      
+    }
+    .item-1 {
+      grid-area: 1/1/2/6;
+      background-color: #9dc96b;
+      width: 1180px;
+      color: white;
+    }
+    .item-1 h2 {
+      margin-top: 60px;
+    }
+     .item-2 {
+      grid-area: 2/1/3/2;
+      width: 390px; 
+    }
+    .item-2 iframe {
+      width: 100%;
+      height:100% ;
+    }
+     .item-3 {
+      grid-area: 2/2/3/3;
+      background-color: hsl(0, 0%, 95%);
+      width: 390px;
+      padding: 20px; 
+    }
+
+    .item-3 input, 
+    .item-3 textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #999;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    .item-3 button {
+      background-color: #8BC34A;
+      color: white;
+      padding: 15px 40px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 10px;
+      margin-left: 230px;
+    }
+
+    .item-3 button:hover {
+      
+      background-color: #689f38;
+    }
+      
+    
+     .item-4 {
+      grid-area: 2/3/3/4;
+      background-color: hsl(0, 0%, 95%);
+      line-height: 1.6;
+      padding: 50px;
+      width: 390px;
+      
+    }
+
+  .item-4 p{
+    word-spacing: 10px;
+  }
+     .item-5 {
+      grid-area: 3/1/4/4;
+      background-color: #9dc96b;
+      width: 1180px; 
+    }
+/* -------------------------------------------------------- */
+
+
+    .footer {
+  margin-top: 125px;
+  text-align: center;
+  padding: 20px 0;
+  background: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 40%);
+  font-size: 14px;
+  height: 100px;
+}
+
+.footer .social-icons {
+  margin-bottom: 15px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin: 0 8px;
+  background: hsl(0, 0%, 87%);
+  padding: 10px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  background: hsl(88, 50%, 53%);
+}
+
+.footer .social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container1">
+    <div class="left">COMPARTO</div>
+    <div class="right">
+      <div class="inner1 active">.01 <br> About</div>
+      <div class="inner1">.02 <br> Services</div>
+      <div class="inner1">.03 <br> Gallery</div>
+      <div class="inner1">.04 <br> Contact</div>
+    </div>
+  </div>
+
+
+  <div class="container2">
+    <div class="img1"><img src="images/comparto-image-01.jpg" alt=""></div>
+     <div class="hero-text">
+      <h2>.01 Comparto CSS Layout</h2><br><br>
+      <p>Comparto is a custom light-weight CSS layout for your website. You can easily adapt and use this for your commercial or personal websites. Feel free to use it.</p>
+      <br><br><p>You cannot redistribute this template ZIP file in any template collection website. Please contact TemplateMo if you have any question.</p>
+      <br><br><p>Nunc sed gravida elit. Curabitur rutrum elit id lobortis viverra. Fusce at libero dui.</p>
+      <br><br><a href="#" class="btn">More Detail</a> </div>
+  </div>
+
+   
+  <div class="features">
+    <div class="feature-item">
+      <i class="fa-solid fa-church"></i>
+      <p>Aenean vel est id massa condimentum</p>
+    </div>
+    <div class="feature-item">
+      <i class="fa-solid fa-chart-bar"></i>
+      <p>Suspendisse interdum lectus purus</p>
+    </div>
+    <div class="feature-item">
+      <i class="fa-solid fa-image"></i>
+      <p>Nulla ac sodales est vel iaculis purus</p>
+    </div>
+</div>
+
+  <div class="container-3">
+    <div class="about-text-1">
+      <br><center></center><h2>.02 Aliquam pretium hendrerit</h2><br></center>
+      <pre>Cras tempus, velit amet facilisis venenatis,
+erat felis imperdiet lectus, at posuere elit
+metus. Title #333 BG #F2F2F2 <br><br>
+Nam iaculis, urna ut laoreet aliquam, massa
+magna dapibus. Text #666</pre><br><br>
+      
+    </div>
+
+    <div class="about-text-2">
+      <br><pre>Nam iaculis,urna ut laoreet, massa
+magna dapibus nibh,at Pellentesque lectus
+odio non risus. nulla ac sodales est,vel
+iaculis.Text#333.BG #DDD</pre><br><br><br>
+    <center><a href="#" class="btn">Read More</a></center>
+    </div>
+
+   <div class="about-image">
+    <img src="images/comparto-image-02.jpg" alt="">
+    </div>
+  </div>
+
+   
+  <div class="container-4">
+    <div class="item1">
+    <h2>.03 The Gallery Section</h2>
+    <pre>
+      <span>Show All</span> .  <span>Nature</span> .  <span>Animals</span> .  <span>People</span>
+    </pre>
+    </div>
+   
+    <div class="item2"><img src="images/gallery-item-01.jpg" alt=""></div>
+    <div class="item3"><img src="images/gallery-item-02.jpg" alt=""></div>
+    <div class="item4"><img src="images/gallery-item-03.jpg" alt=""></div>
+    <div class="item5"><img src="images/gallery-item-04.jpg" alt=""></div>
+    <div class="item6"><img src="images/gallery-item-05.jpg" alt=""></div>
+    <div class="item7"><img src="images/gallery-item-06.jpg" alt=""></div>
+    <div class="item8"><img src="images/gallery-item-07.jpg" alt=""></div>
+    <div class="item9"><img src="images/gallery-item-08.jpg" alt=""></div>
+    <div class="item10"><img src="images/gallery-item-09.jpg" alt=""></div>
+    <div class="item11"><img src="images/gallery-item-10.jpg" alt=""></div>
+
+    <div class="item12"></div>
+  </div>
+
+  <div class="container-5"><br>
+      <div class="item-1"><center><h2>.04 Contact Us</h2></center></div>
+      <div class="item-2"> <iframe src="https://maps.google.com/maps?q=Rio%20de%20Janeiro&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe></div>
+      
+      <div class="item-3">
+      <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message..."></textarea>
+        <button type="submit">Send</button></div>
+
+      <div class="item-4"><p>Pellentesque egestas odio sed tellus dictum, vel lobortis ante vehicula.</p><br>
+        <p>Morbi eget accumsan libero, non tincidunt felis.</p><br>
+        <p>Tel: 010-020-0990</p>
+        <p>Email: info@company.com</p></div>
+
+      <div class="item-5"></div>
+  </div>
+
+  <div class="footer">
+  <div class="social-icons">
+    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="images/intsa.png" alt="Instagram"></a>
+    <a href="#"><img src="images/twiter.png" alt="Twitter"></a>
+    <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+  </div>
+  <br><p>Copyright © 2020 Comparto Studio - Design: TemplateMo</p><br>
+</div>
+
+</body>
+</html>
